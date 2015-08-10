@@ -1,0 +1,17 @@
+/*===============================================
+
+                     Layout 
+
+===============================================*/
+.page-wrap {
+  margin: 0 auto;
+  max-width: 90em;
+  overflow: hidden;
+  padding: 0 6em;
+}
+
+.column {
+  height: 50px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,17 @@
+/*===============================================
+
+                     Layout 
+
+===============================================*/
+/* line 9, ../scss/_layout.scss */
+.page-wrap {
+  margin: 0 auto;
+  max-width: 90em;
+  overflow: hidden;
+  padding: 0 6em;
+}
+
+/* line 17, ../scss/_layout.scss */
+.column {
+  height: 50px;
+}
