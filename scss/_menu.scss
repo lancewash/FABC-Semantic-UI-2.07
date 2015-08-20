@@ -4,9 +4,11 @@
 
 ===============================================*/
 
-
-.nav-main {
+.nav-main-wrap {
   background: #3c0c08;
+}
+.nav-main {
+
   height: 70px;
   position: relative;
   z-index: 20;
@@ -16,12 +18,12 @@
   }
 }
 
-.ui.grid + .grid.nav-main {
-  margin: 0;
-}
+//.ui.grid + .grid.nav-main {
+//  margin: 0;
+//}
 
 .nav-top {
-  height: 55px;
+  height: 60px;
 
   .column {
     padding: .5em !important;
