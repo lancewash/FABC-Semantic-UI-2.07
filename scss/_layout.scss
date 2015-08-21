@@ -123,10 +123,13 @@ li {
     text-decoration: none;
   }
 }
+strong {
+  color: $color-highlight-dark;
+}
 .column h1 {
   font-size: 2rem;
   margin: 0 auto 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   position: relative;
   text-align: center;
   width: 600px;
@@ -160,7 +163,7 @@ h2 {
 }
 .ui.grid>[class*="equal width"].row>.column, .ui[class*="equal width"].grid>.column:not(.row), .ui[class*="equal width"].grid>.row>.column {
   padding-top: 3em;
-  padding-bottom: 3em;
+  padding-bottom: 6em;
 }
 .ui.cards>.card>.content>.header:not(.ui), .ui.card>.content>.header:not(.ui) {
   font-size: .9rem;
@@ -181,7 +184,7 @@ h2 {
   padding-top: 2em !important;
   
   h1, h2, h3, h4 {
-    color: rgba(255,255,255,.9);
+    color: rgba(255,255,255,.95);
   }
 
   p, li, a,  {
@@ -201,8 +204,8 @@ h2 {
   //padding: 2em 0;
   width: 100%;
   
-  h1, h2, h3, h4 {
-    color: rgba(255,255,255,.9);
+  h1, h2, h3, h4, strong {
+    color: rgba(255,255,255,.95);
   }
 
   p, li, a,  {

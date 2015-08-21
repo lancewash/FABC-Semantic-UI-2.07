@@ -34,15 +34,27 @@
   }
 }
 
-.nav-stacked li {
-  margin-bottom: 1px;
+.nav-stacked {
+
+  ul {
+
+  }
+  li {
+     margin-bottom: 1px;
+   }
 }
 .nav-stacked a, .nav-stacked span {
-  background: rgba(255,255,255,.05);
+  border-right: 1px solid rgba(255,255,255,.1);
   display: block;
   padding: .6em .7em;
+  -webkit-transition: all .25s ease-out;
+  -moz-transition: all .25s ease-out;
+  -ms-transition: all .25s ease-out;
+  -o-transition: all .25s ease-out;
+  transition: all .25s ease-out;
 
   &:hover {
-    background: rgba(255,255,255,.1);
+    background: rgba(255,255,255,.05);
+    border-right: 1px solid rgba(255,255,255,.2);
   }
 }
