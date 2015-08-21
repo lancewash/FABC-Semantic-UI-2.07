@@ -1,0 +1,48 @@
+/*===============================================
+
+              Menu - Navigation
+
+===============================================*/
+
+.nav-main-wrap {
+  background: #3c0c08;
+}
+.nav-main {
+
+  height: 70px;
+  position: relative;
+  z-index: 20;
+
+  .column {
+    background: none;
+  }
+}
+
+//.ui.grid + .grid.nav-main {
+//  margin: 0;
+//}
+
+.nav-top {
+  height: 60px;
+
+  .column {
+    padding: .5em !important;
+  }
+
+  p {
+    font-size: .75rem;
+  }
+}
+
+.nav-stacked li {
+  margin-bottom: 1px;
+}
+.nav-stacked a, .nav-stacked span {
+  background: rgba(255,255,255,.05);
+  display: block;
+  padding: .6em .7em;
+
+  &:hover {
+    background: rgba(255,255,255,.1);
+  }
+}

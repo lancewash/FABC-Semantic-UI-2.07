@@ -30,17 +30,17 @@ h6 {
 }
 h1 {
   font-size: $h1FontSize;
-  line-height: 1.111em;
+  line-height: 1.5em;
   margin-bottom: .75em;
 }
 h2 {
   font-size: $h2FontSize;
-  line-height: 1.111em;
+  line-height: 1.55em;
   margin-bottom: .75em;
 }
 h3 {
   font-size: $h3FontSize;
-  line-height: 1.333em;
+  line-height: 1.6em;
   margin-bottom: 1.5em;
 }
 h4 {
@@ -153,8 +153,8 @@ blockquote {
   font-style: italic;
   position: relative;
   @include rem('padding-left', $baseLineInEms);
-  margin-left: 0;
-  border-left: 2px solid #dbdada;
+  //margin-left: 0;
+  //border-left: 2px solid #dbdada;
   & p {
     margin-bottom: .5em;
   }

@@ -27,7 +27,7 @@
         </div>
         <div class="nav-main-wrap">
         <div class="ui grid nav-main">
-            <div class="five wide column">
+            <div class="five wide column logo-wrap">
                 <a href="#" id="logo" class="logo">First African Baptist Church</a>
             </div>
             <div class="eleven wide column">
@@ -67,17 +67,16 @@
             <div class="banner-img">
                 <img src="img/banner-img/banner-img-6.jpg" alt=""/>
             </div>
-
         </div>
-
     </div>
     <main role="main">
-        <section>
-            <div class="ui mobile centered column grid intro">
+      <!--<div class="inverted-wrap">-->
+        <section class="content-wrap">
+            <div class="ui mobile centered column grid intro"><h1>Welcome to<br>
+              First African Baptist Church
+              <span>Of Darby Township Pennsylvania</span></h1>
                 <div class="twelve wide column">
-                    <h1>Welcome to<br>
-                        First African Baptist Church<br>
-                        <span>Of Darby Township Pennsylvania</span></h1>
+
                     <img src="img/pastor-dent.png" alt=""/>
                     <blockquote>
                         " a family-oriented church for all of the Lord's children regardless of race, color, creed, or
@@ -99,7 +98,8 @@
                 </div>
             </div>
         </section>
-        <section class="ui mobile relaxed equal width grid">
+      <!--</div>-->
+        <section class="ui mobile relaxed equal width grid content-wrap">
             <div class="column">
                 <h2>Pastor's Desk</h2>
                 <img src="img/pastors-desk.jpg" alt=""/>
@@ -141,7 +141,7 @@
                 <a href="" class="button button-is-hidden " data-reveal-id="ModalTwo">All Services Times</a>
             </div>
         </section>
-        <div class="inverted-wrap">
+        <div class="inverted-wrap content-wrap">
             <section class="ui mobile relaxed equal width grid">
                 <div class="column">
                     <h2>News & Events</h2>
@@ -166,10 +166,10 @@
                 </div>
             </section>
         </div>
-        <section>
+        <section class="content-wrap">
             <div class="ui mobile centered column grid intro">
-                <h2>"Word of Life" Bookstore</h2>
-
+                <h1>"Word of Life" Bookstore</h1>
+            <div class="ten wide column center">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi facilis, nihil unde odio error
                     perspiciatis et iste provident ducimus voluptatum. Mollitia accusamus assumenda aliquid reiciendis
                     voluptatum
@@ -177,9 +177,10 @@
                     ducimus veniam, eum alias! Nesciunt culpa, praesentium optio tenetur accusamus nihil laborum maiores
                     labore dignissimos, officiis a dolorem ipsa. Aliquam sequi, veniam repellendus.</p>
             </div>
+            </div>
 
             <!-- Begin Books -->
-            <div class="content-wrap">
+            <div class="content-inner-wrap content-wrap">
                 <div class="ui six column grid">
                     <div class="column">
                         <div class="ui fluid card">
@@ -237,7 +238,7 @@
             </ul>-->
             <a href="" class="button button-is-hidden">Read More</a>
         </section>
-        <div class="inverted-wrap">
+        <div class="inverted-wrap content-wrap">
             <section class="ui mobile relaxed equal width grid">
                 <div class="column">
                     <h2>B.W. Watkins MSM</h2>
@@ -271,7 +272,8 @@
                 </div>
             </section>
         </div>
-        <section class="ui mobile relaxed width grid google-maps">
+      <div class="inverted-wrap content-wrap">
+        <section class="ui mobile width grid google-maps">
             <a href="https://www.google.com/maps/place/901+Clifton+Ave,+Sharon+Hill,+PA+19079/@39.8993146,-75.2681011,17z/data=!3m1!4b1!4m2!3m1!1s0x89c6c399032fb843:0x41c7ef4b4110d15a"
                target="_blank">
                 <h3>First African<br>
@@ -281,19 +283,25 @@
                 <i class="fi-map size-48 fi-white"></i>
 
                 <p>Directions</p>
-                <iframe src="https://www.google.com/maps/d/embed?mid=zcTNCy1D-CGs.kE34mbzRRnfE" width="1600"
+                <iframe src="https://www.google.com/maps/d/embed?mid=zcTNCy1D-CGs.kE34mbzRRnfE" width="1800"
                         height="400"></iframe>
             </a>
         </section>
+        </div>
     </main>
-    <footer>
-        <ul>
-            <li><a href="">Leadership</a></li>
-            <li><a href="">Ministries</a></li>
-            <li><a href="">Our History</a></li>
-            <li><a href="">News & Events</a></li>
-        </ul>
-
+    <footer class="inverted-wrap">
+      <div class="ui equal width grid">
+        <div class="column nav-stacked">
+          <h3>Site Menu</h3>
+          <ul>
+              <li><a href="">Leadership</a></li>
+              <li><a href="">Ministries</a></li>
+              <li><a href="">Our History</a></li>
+              <li><a href="">News & Events</a></li>
+              <li><a href="">Leadership</a></li>
+          </ul>
+        </div>
+      <div class="column">
         <h3>Worship Times</h3>
 
         <p><strong>8:45 am</strong><br>
@@ -303,7 +311,8 @@
             <strong>First Sunday</strong><br>
             Holy Baptism, The Lord’s Supper<br>
             and the right hand of fellowship for new members</p>
-
+      </div>
+      <div class="column">
         <h3>First African Baptist Church</h3>
 
         <p>901 Clifton Avenue<br>Sharon Hill, Pennsylvania 19079<br>
@@ -311,10 +320,12 @@
             Office Fax: 610.461.4186<br>
             Email: <a href="mailto:fabc-joy@fabc.microsoftonline.com">FABC-Joy@fabc.microsoftonline.com</a></p>
         <a href="http://n2ncdc.org/" target="_blank"><img src="img/neighbor-to-neighbor.png" alt=""/></a>
+        </div>
+        </div>
     </footer>
 </div>
 <script src="js/jquery-2.1.4.min.js"></script>
-<script src=""></script>
+<script src="js/slick.min.js"></script>
 <script>
     $(document).ready(function () {
         $(".banner").slick({

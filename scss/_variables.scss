@@ -9,6 +9,7 @@ $mainNavFontFamily: 'montserratregular';
 $backgroundBody: #fff;
 $colorBody: rgba(113,109,103,.75);
 $colorHeadings: #716D67;
+$color-highlight: #D97B29;
 
 // Grid
 $gridWidth: 1000;
@@ -21,12 +22,12 @@ $baseLine: $baseFontSize * $baseLineHeight;
 $baseLineInEms: $baseLine / $baseFontSize;
 
 // Heading
-$h1FontSize: $baseFontSize + 8px; // 36px
-$h2FontSize: $baseFontSize + 6px; // 30px
-$h3FontSize: $baseFontSize + 4px; // 24px
-$h4FontSize: $baseFontSize + 2px; // 18px
-$h5FontSize: $baseFontSize + 0px; // 14px
-$h6FontSize: $baseFontSize - 2px; // 12px
+$h1FontSize: $baseFontSize + 16px;
+$h2FontSize: $baseFontSize + 6px;
+$h3FontSize: $baseFontSize + 4px;
+$h4FontSize: $baseFontSize + 2px;
+$h5FontSize: $baseFontSize + 0px;
+$h6FontSize: $baseFontSize - 2px;
 
 $h1SubheadingFontSize: $baseFontSize + 16px; // 30px
 $h2SubheadingFontSize: $baseFontSize + 10px; // 24px
