@@ -20,7 +20,9 @@
 //section {
 //  padding: 2em 0;
 //}
-
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: $baseFontFamily;
   font-size: $baseFontSize;
@@ -37,6 +39,25 @@ body {
 section, .nav-top, .nav-main {
   margin: 0 auto;
   max-width: 90em;
+}
+.nav-top {
+
+  nav {
+    height: 50px;
+    a {
+      cursor: zoom-in;
+    }
+  }
+}
+nav {
+
+  
+  ul {
+    align-items: center;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+  }
 }
 header .ui.grid > *,
 header .ui.grid > .column:not(.row){
@@ -101,9 +122,14 @@ header .ui.grid > .column:not(.row){
     margin: 1em 0;
     text-align: center;
 
-    span {
+    .large-head {
       display: block;
-      font-size: 50%;
+      font-size: 125%;
+    }
+    .small-head {
+      display: block;
+      font-size: 60%;
+      line-height: 2;
     }
   }
   
@@ -132,7 +158,7 @@ strong {
   padding-bottom: 1rem;
   position: relative;
   text-align: center;
-  width: 600px;
+  max-width: 700px;
 
   &::before {
     border-bottom: 2px solid $color-highlight;
