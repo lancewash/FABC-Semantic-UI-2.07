@@ -38,27 +38,10 @@ body {
 }
 section, .nav-top, .nav-main {
   margin: 0 auto;
-  max-width: 90em;
+  max-width: 100em;
 }
-.nav-top {
 
-  nav {
-    height: 50px;
-    a {
-      cursor: zoom-in;
-    }
-  }
-}
-nav {
 
-  
-  ul {
-    align-items: center;
-    display: flex;
-    display: -webkit-flex;
-    justify-content: center;
-  }
-}
 header .ui.grid > *,
 header .ui.grid > .column:not(.row){
   padding-left: 0;
@@ -79,6 +62,11 @@ header .ui.grid > .column:not(.row){
   text-indent: -999999em;
   width: 212px;
   z-index: 30;
+  -webkit-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -ms-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  transition: all .5s ease-in;
 
   &:hover {
     margin-top: 17px;
@@ -108,7 +96,7 @@ header .ui.grid > .column:not(.row){
 
 .ui.grid {
   margin: 0 auto;
-  max-width: 90em;
+  max-width: 100em;
 }
 .ui.relaxed.grid {
   margin: 0 auto;
@@ -234,8 +222,15 @@ h2 {
     color: rgba(255,255,255,.95);
   }
 
-  p, li, a,  {
-    color: rgba(255,255,255,.8);
+  p, li {
+    color: rgba(255,255,255,.75);
+  }
+  a {
+    color: rgba(255,255,255,.5);
+    
+    &:hover {
+      color: rgba(255,255,255,1);
+    }
   }
 
   .episode .date, .artist, .description, .episode .podcast_name, .episode .episode_name, .episode .meta p, .episode .description {
@@ -285,7 +280,7 @@ div.episode h3.episode_name {
 
 
 .banner {
-  max-height: 350px;
+  max-height: 560px;
   overflow: hidden;
 
 
@@ -306,9 +301,13 @@ div.episode h3.episode_name {
   overflow: hidden;
 }
 .banner-img {
+  height: 560px;
   position: relative;
 }
-
+.banner-1 {
+  background: url("../img/banner-img/banner-img-4.jpg");
+  overflow: hidden;
+}
 footer {
   padding-bottom: 4em;
 }
