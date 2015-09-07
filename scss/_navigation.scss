@@ -32,7 +32,7 @@
 
   a {
     color: rgba(255,255,255,1);
-    padding: 1.5em 0;
+    padding: 1.65em 0;
     text-transform: uppercase;
 
     
@@ -53,12 +53,13 @@
 //}
 
 .nav-top {
-  height: 60px;
+  height: 40px;
 
   .column {
     //padding: .5em !important;
   }
   nav {
+    background: rgba(0,0,0,.05);
     height: 50px;
     a {
       cursor: zoom-in;
@@ -66,12 +67,13 @@
     }
   }
   ul {
-    margin-top: .2em;
+    //margin-top: .2em;
   }
 
   p {
     font-size: .75rem;
-    padding-top: .5em;
+    margin-top: .65em;
+    //padding-top: .5em;
   }
 }
 
@@ -126,7 +128,7 @@ nav {
 
     a {
       display: block;
-      padding: 1.25em 0;
+      padding: .75em 0;
     }
   }
 }
