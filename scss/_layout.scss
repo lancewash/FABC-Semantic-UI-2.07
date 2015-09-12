@@ -188,7 +188,7 @@ h2 {
   }
 }
 .ui.grid>[class*="equal width"].row>.column, .ui[class*="equal width"].grid>.column:not(.row), .ui[class*="equal width"].grid>.row>.column {
-  padding-top: 3em;
+  //padding-top: 3em;
   padding-bottom: 6em;
 }
 .ui.cards>.card>.content>.header:not(.ui), .ui.card>.content>.header:not(.ui) {
@@ -204,6 +204,9 @@ h2 {
 .ui.grid>.column:not(.row), .ui.grid>.row>.column {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+.intro {
+  padding-bottom: 6em;
 }
 .inverted {
   //background: #344b56;
@@ -272,11 +275,12 @@ img {
 .google-maps {
   position: relative;
   padding-bottom: 75%; // This is the aspect ratio
-  height: 400px;
+  height: 600px;
   overflow: hidden;
 }
 .google-maps iframe {
   border: none !important;
+  margin-top: 80px;
   position: absolute;
   top: 0;
   left: 0;
@@ -347,6 +351,17 @@ div.episode h3.episode_name {
   height: 360px;
 }
 .slick-track, .slick-slide {
+  height: 360px;
+}
+.p-1 {
+    background: linear-gradient(rgba(52, 75, 86, 0.8), rgba(52, 75, 86, 0.9)),
+    url("../img/background/fabc-bg-2.jpg");
+    //height: 360px;
+}
+.p-2 {
+  background: url("../img/trans-80.png"),
+  url("../img/background/fabc-bg-3.jpg");
+  background-repeat: repeat, no-repeat;
   height: 360px;
 }
 footer {
