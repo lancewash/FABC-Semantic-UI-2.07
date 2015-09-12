@@ -8,13 +8,25 @@
 
 @media only screen and (max-width: 48em) {
 
-  .ui.mobile.grid .column {
+  .ui.mobile.grid .column, .ui.mobile.grid {
     width: 100%;
   }
   .ui.grid>[class*="equal width"].row>.column,
   .ui[class*="equal width"].grid>.column:not(.row),
   .ui[class*="equal width"].grid>.row>.column {
     width: 100%;
+  }
+  ui.grid>.mobile.smobile.row>.column,
+  .ui.mobile.grid>.column.grid>.column,
+  .ui.mobile.grid>.column.row>.column,
+  .ui.smobile.grid>.column:not(.row),
+  .ui.mobile.grid>.row>.column,
+  .ui.mobile.grid>.row>.wide.column,
+  .ui.mobile.grid>.wide.column {
+    width: 100% !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    padding: 1rem !important;
   }
 }
 //section {
@@ -280,7 +292,7 @@ div.episode h3.episode_name {
 
 
 .banner {
-  max-height: 560px;
+  height: 360px;
   overflow: hidden;
 
 
@@ -301,15 +313,44 @@ div.episode h3.episode_name {
   overflow: hidden;
 }
 .banner-img {
-  height: 560px;
+  height: 360px;
   position: relative;
+  
+  h1, h2 {
+    background: rgba(0, 0, 0, .7);
+    bottom: 0;
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.25rem;
+    font-weight: 100;
+    //margin-top: 10%;
+    //margin-left: auto;
+    //margin-right: auto;
+    padding: 2em;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    text-transform: none;
+    max-width: 33%;
+    min-width: 320px;
+
+    &:before {
+      border: none;
+    }
+  }
 }
 .banner-1 {
   background: url("../img/banner-img/banner-img-4.jpg");
-  overflow: hidden;
+  height: 360px;
+}
+.banner-2 {
+  background: url("../img/banner-img/banner-img-1.jpg");
+  height: 360px;
+}
+.slick-track, .slick-slide {
+  height: 360px;
 }
 footer {
-  padding-bottom: 4em;
+  padding: 4em 0;
 }
 
 /*
