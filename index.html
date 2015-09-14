@@ -11,7 +11,9 @@
         $(function(){
             $.stellar({
                 horizontalScrolling: false,
-                verticalOffset: 0
+                verticalOffset: 50,
+                parallaxBackgrounds: true,
+                hideDistantElements: true
             });
         });
     </script>
@@ -66,10 +68,16 @@
                 <!--<img src="img/banner-img/banner-img-4.jpg" alt=""/>-->
             </div>
 
-             <div class="banner-img banner-2" data-stellar-background-ratio="0.5">
+             <div class="banner-img banner-2" data-stellar-background-ratio="0.5" data-stellar-offset-parent="true">
                  <!--<div><h2>"a family-oriented church for all of the Lord's children regardless of race, color, creed, or circumstance."</h2></div>-->
                  <!--<img src="img/banner-img/banner-img-1.jpg" alt=""/>-->
              </div>
+            <div class="banner-img banner-3" data-stellar-background-ratio="0.5" data-stellar-offset-parent="true">
+                <!--<div><h2>"a family-oriented church for all of the Lord's children regardless of race, color, creed, or circumstance."</h2></div>-->
+                <!--<img src="img/banner-img/banner-img-4.jpg" alt=""/>-->
+            </div>
+
+
             <!-- <div class="banner-img">
                  <img src="img/banner-img/banner-img-7.jpg" alt=""/>
              </div>
@@ -345,7 +353,7 @@
             </div>
         </div>
     </footer>
-</div>
+</v c>
 
 <script src="js/slick.min.js"></script>
 <!--<script src="js/foundation.min.js"></script>
