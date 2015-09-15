@@ -90,7 +90,7 @@ header .ui.grid > .column:not(.row){
   position: relative;
   
   &:not(.inverted-wrap) {
-    padding: 3em 0;
+    padding: 3em 0 0;
   }
   .subpage & {
     padding: 6em 0 3em;
@@ -137,7 +137,7 @@ header .ui.grid > .column:not(.row){
     }
   }
  
-  img {
+  .intro-image {
     float: left;
     margin: 0 4rem 4rem 0;
   }
@@ -415,11 +415,11 @@ div.episode h3.episode_name {
   //display: flex;
   padding: 1em 3em;
   min-height: 260px;
-  -webkit-transition: all .5s ease-in;
-  -moz-transition: all .5s ease-in;
-  -ms-transition: all .5s ease-in;
-  -o-transition: all .5s ease-in;
-  transition: all .5s ease-in;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 #profile-wrap {
 
@@ -441,6 +441,10 @@ div.episode h3.episode_name {
 }
 .ui.grid>.ui.divider {
   width: 100%;
+}
+.ui.divider:not(.vertical):not(.horizontal) {
+  border-top: 1px solid rgba(0, 0, 0, .05);
+  border-bottom: 1px solid rgba(0,0,0,.0);
 }
 //.ui.divider {
 //  margin: 3em 0;
