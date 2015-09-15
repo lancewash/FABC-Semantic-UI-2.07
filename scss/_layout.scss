@@ -90,8 +90,12 @@ header .ui.grid > .column:not(.row){
   position: relative;
   
   &:not(.inverted-wrap) {
-    padding-top: 3em;
+    padding: 3em 0;
   }
+  .subpage & {
+    padding: 6em 0 3em;
+  }
+
 }
 .content-inner-wrap {
   margin: 0 auto;
@@ -132,7 +136,7 @@ header .ui.grid > .column:not(.row){
       line-height: 2;
     }
   }
-  
+ 
   img {
     float: left;
     margin: 0 4rem 4rem 0;
@@ -399,6 +403,48 @@ div.episode h3.episode_name {
   }
 
 }
+.content-wrap.main-profiles {
+  background: rgba(0, 0, 0, .05);
+  padding: 3em;
+}
+.ui.sticky {
+  padding: 0 3em;
+}
+.ui.sticky.fixed.top {
+  background: rgba(0, 0, 0, .1);
+  //display: flex;
+  padding: 1em 3em;
+  min-height: 260px;
+  -webkit-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -ms-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+#profile-wrap {
+
+  &.ui.grid>.column:not(.row),
+  &.ui.grid>.row>.column {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  h1, h2, h3 {
+    margin: 1em 0 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+.back-to-top {
+  display: block;
+  margin-top: 2em;
+}
+.ui.grid>.ui.divider {
+  width: 100%;
+}
+//.ui.divider {
+//  margin: 3em 0;
+//}
 footer {
   padding: 4em 0;
 }
@@ -510,10 +556,10 @@ Slick Slider
 }
 
 /* Slider */
-.slick-loading .slick-list
+/*.slick-loading .slick-list
 {
   background: #fff url('./ajax-loader.gif') center center no-repeat;
-}
+}*/
 
 /* Icons */
 @font-face
