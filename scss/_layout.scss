@@ -88,12 +88,16 @@ header .ui.grid > .column:not(.row){
   //padding-top: 3em !important;
   //padding-bottom: 4em !important;
   position: relative;
+
   
   &:not(.inverted-wrap) {
     padding: 3em 0 0;
   }
   .subpage & {
     padding: 6em 0 3em;
+  }
+  &.intro {
+    padding-bottom: 4em;
   }
 
 }
@@ -113,13 +117,43 @@ header .ui.grid > .column:not(.row){
 .ui.grid {
   margin: 0 auto;
   max-width: 100em;
+
+  .column {
+
+    &.image-wrap {
+      padding-bottom: 2em !important;
+      
+      p {
+        text-align: center;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &.card-wrap {
+    padding-bottom: 6em;
+  }
+  
+  //&.profile-wrap {
+  //  padding-top: 3em;
+  //
+  //  //.profile:first-child {
+  //  //  padding-top: 3em;
+  //  //}
+  //}
+  >p {
+    padding: 0;
+    width: 100%;
+  }
 }
 .ui.relaxed.grid {
   margin: 0 auto;
   //padding: 0 1em 4em;
 }
 
-.ui.grid.intro {
+.centered-wrap .ui.grid {
   //padding: 2em 0;
 
   h1 {
@@ -142,6 +176,7 @@ header .ui.grid > .column:not(.row){
     margin: 0 4rem 4rem 0;
   }
 }
+
 ul {
   margin: 0;
   padding: 0;
@@ -156,6 +191,12 @@ li {
 strong {
   color: $color-highlight-dark;
 }
+blockquote {
+  border-left: 3px solid rgba(0,0,0,.05);
+  font-size: .85rem;
+  margin: 0;
+}
+
 .column h1 {
   font-size: 2rem;
   margin: 0 auto 2rem;
@@ -209,7 +250,7 @@ h2 {
   padding-left: 2rem;
   padding-right: 2rem;
 }
-.intro {
+.centered-wrap {
   padding-bottom: 6em;
 }
 .inverted {
@@ -275,6 +316,11 @@ h2 {
 
 img {
   max-width: 100%;
+  
+  &.centered {
+    display: block;
+    margin: 0 auto;
+  }
 }
 .google-maps {
   position: relative;
@@ -284,7 +330,7 @@ img {
 }
 .google-maps iframe {
   border: none !important;
-  margin-top: 80px;
+  //margin-top: 80px;
   position: absolute;
   top: 0;
   left: 0;
@@ -332,6 +378,9 @@ div.episode h3.episode_name {
     height: 250px;
   }
 }
+.subpage-content {
+  border-right: 1px solid rgba(0, 0, 0, .05);
+}
 .banner-wrap {
   overflow: hidden;
 }
@@ -377,7 +426,12 @@ div.episode h3.episode_name {
   height: 400px;
 }
 /*.banner-4 {
-  background: url("../img/banner-img/banner-img-2.jpg") 0 0;
+  background: url("../img/banner-img/banner-img-1.jpg") 0 0;
+  //background-position: 0 0 !important;
+  height: 400px;
+}*/
+/*.banner-5 {
+  background: url("../img/banner-img/banner-img-8.jpg") 0 0;
   //background-position: 0 0 !important;
   height: 400px;
 }*/
@@ -403,30 +457,69 @@ div.episode h3.episode_name {
   }
 
 }
+
 .content-wrap.main-profiles {
   background: rgba(0, 0, 0, .05);
-  padding: 3em;
+  //padding: 3em;
 }
 .ui.sticky {
-  padding: 0 3em;
-}
-.ui.sticky.fixed.top {
-  background: rgba(0, 0, 0, .1);
-  //display: flex;
-  padding: 1em 3em;
-  min-height: 260px;
   -webkit-transition: all .5s ease-in-out;
   -moz-transition: all .5s ease-in-out;
   -ms-transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+
+  &.fixed.top {
+    padding-top: 1em;
+  }
+  
+  a {
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+    display: block;
+    padding:: .5em 0;
+
+    &:hover {
+      border-bottom: 1px solid rgba(0, 0, 0, .1);
+      padding-left: 2px;
+  }
+ }
+}
+//.sticky-nav-wrap {
+//  background: url("../img/trans-80.png") repeat;
+//  //background: rgba(0,0,0,.025);
+//  padding: 1em;
+//  
+//  h1, h2, h3 {
+//    color: rgba(255, 255, 255, .85);
+//  }
+//  a {
+//    color: rgba(255,255,255,1);
+//  }
+//}
+//.ui.sticky {
+//  padding: 0 3em;
+//}
+.ui.sticky.fixed.top {
+
+  //display: flex;
+  //padding: 2em;
+  //min-height: 260px;
+
 }
 #profile-wrap {
 
   &.ui.grid>.column:not(.row),
   &.ui.grid>.row>.column {
+    //padding-left: 0;
+    //padding-right: 0;
+  }
+  > .eight:not(.row):nth-child(n0+1){
     padding-left: 0;
-    padding-right: 0;
+  }
+  
+  .eight {
+    padding-left: 0;
+    padding-right: 4em;
   }
   
   h1, h2, h3 {
@@ -441,11 +534,16 @@ div.episode h3.episode_name {
 }
 .ui.grid>.ui.divider {
   width: 100%;
+  
+  +.profile {
+    padding-top: 3em;
+  }
 }
 .ui.divider:not(.vertical):not(.horizontal) {
   border-top: 1px solid rgba(0, 0, 0, .05);
   border-bottom: 1px solid rgba(0,0,0,.0);
 }
+
 //.ui.divider {
 //  margin: 3em 0;
 //}

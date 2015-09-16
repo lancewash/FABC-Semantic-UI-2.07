@@ -31,9 +31,25 @@
   }
 
   a {
+    border-bottom: 2px solid rgba(255,255,255,0);
     color: rgba(255,255,255,1);
-    padding: 1.65em 0;
+    padding: 1.6em 0;
+    position: relative;
     text-transform: uppercase;
+    
+    &.active:before {
+      border-bottom: 2px solid #D97B29;
+      bottom: -1px;
+      content: "";
+      color: #000;
+      left: 45%;
+      position: absolute;
+      width: 10%;
+    }
+    &.active:hover {
+      cursor: default;
+      opacity: 1;
+    }
 
     
     &:hover {

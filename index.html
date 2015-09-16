@@ -8,10 +8,10 @@
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
     <script>
-        $(function(){
+        $(function () {
             $.stellar({
                 horizontalScrolling: false,
-                verticalOffset: 50,
+                verticalOffset: 0,
                 parallaxBackgrounds: true,
                 hideDistantElements: true
             });
@@ -34,6 +34,7 @@
                         <li><a href="">Calendar</a></li>
                         <li><a href="">Sunday Chronicle</a></li>
                         <li><a href="">Sermons</a></li>
+                        <a class="">Run Code</a>
                     </ul>
                 </nav>
             </div>
@@ -41,7 +42,7 @@
         <div class="nav-main-wrap">
             <div class="[ ui grid ] nav-main">
                 <div class="[ four wide column ] logo-wrap">
-                    <a href="#" id="logo" class="logo">First African Baptist Church</a>
+                    <a href="index.html" id="logo" class="logo">First African Baptist Church</a>
                 </div>
                 <div class="[ four wide column ]">
                     <a href="https://www.biblegateway.com/" target="_blank"><img src="img/bible-gateway.png"
@@ -52,9 +53,9 @@
 
                         <ul>
                             <!--<li><a href="">Home</a></li>-->
-                            <li><a href="">Leadership</a></li>
-                            <li><a href="">Ministries</a></li>
-                            <li><a href="">Our History</a></li>
+                            <li><a href="leadership.html">Leadership</a></li>
+                            <li><a href="ministries.html">Ministries</a></li>
+                            <li><a href="our-history.html">Our History</a></li>
                             <li><a href="">News & Events</a></li>
                         </ul>
                     </nav>
@@ -63,19 +64,32 @@
     </header>
     <div class="banner-wrap" role="banner">
         <div class="banner">
-            <div class="banner-img banner-1" data-stellar-background-ratio="0.5">
+            <div class="banner-img banner-1" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="50"
+                 data-stellar-offset-parent="true">
                 <!--<div><h2>"a family-oriented church for all of the Lord's children regardless of race, color, creed, or circumstance."</h2></div>-->
                 <!--<img src="img/banner-img/banner-img-4.jpg" alt=""/>-->
             </div>
 
-             <div class="banner-img banner-2" data-stellar-background-ratio="0.5" data-stellar-offset-parent="true">
-                 <!--<div><h2>"a family-oriented church for all of the Lord's children regardless of race, color, creed, or circumstance."</h2></div>-->
-                 <!--<img src="img/banner-img/banner-img-1.jpg" alt=""/>-->
-             </div>
-            <div class="banner-img banner-3" data-stellar-background-ratio="0.5" data-stellar-offset-parent="true">
+            <div class="banner-img banner-2" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="50"
+                 data-stellar-offset-parent="true">
+                <!--<div><h2>"a family-oriented church for all of the Lord's children regardless of race, color, creed, or circumstance."</h2></div>-->
+                <!--<img src="img/banner-img/banner-img-1.jpg" alt=""/>-->
+            </div>
+            <div class="banner-img banner-3" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="100"
+                 data-stellar-offset-parent="true">
                 <!--<div><h2>"a family-oriented church for all of the Lord's children regardless of race, color, creed, or circumstance."</h2></div>-->
                 <!--<img src="img/banner-img/banner-img-4.jpg" alt=""/>-->
             </div>
+
+            <!-- <div class="banner-img banner-4" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="100" data-stellar-offset-parent="true">
+                 &lt;!&ndash;<div><h2>"a family-oriented church for all of the Lord's children regardless of race, color, creed, or circumstance."</h2></div>&ndash;&gt;
+                 &lt;!&ndash;<img src="img/banner-img/banner-img-4.jpg" alt=""/>&ndash;&gt;
+             </div>-->
+
+            <!--<div class="banner-img banner-5" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="400" data-stellar-offset-parent="true">
+                &lt;!&ndash;<div><h2>"a family-oriented church for all of the Lord's children regardless of race, color, creed, or circumstance."</h2></div>&ndash;&gt;
+                &lt;!&ndash;<img src="img/banner-img/banner-img-4.jpg" alt=""/>&ndash;&gt;
+            </div>-->
 
 
             <!-- <div class="banner-img">
@@ -96,27 +110,41 @@
     </div>
     <main role="main">
         <!--<div class="inverted-wrap">-->
-        <section class="content-wrap">
-            <div class="[ ui mobile column grid ] centered intro"><h1><span class="large-head">Welcome to</span>
+        <section class="content-wrap centered-wrap intro">
+            <div class="[ ui mobile column grid ] centered"><h1><span class="large-head">Welcome to</span>
                 First African Baptist Church
                 <span class="small-head">Of Darby Township Pennsylvania</span></h1>
 
                 <div class="[ twelve wide column ]">
-
-                    <img class="ui circular image intro-image" src="img/pastor-dent.jpg" alt=""/>
-                    <blockquote>
-                        "a family-oriented church for all of the Lord's children regardless of race, color, creed, or circumstance."
-                    </blockquote>
-                    <p>I am very pleased that you decided to visit the website of First African Baptist Church of Sharon
-                        Hill, PA. First African is a family-oriented church for all of the Lord's children regardless of race,
-                        color, creed, or circumstance.
-                        If you have never experienced the JOY! of First African, I sincerely ask you to join us for Sunday morning worship service. If you have visited previously and are looking for a church home, please accept
-                        an invitation to become part of our Christian fellowship on Sunday morning.May God bless and keep you.</p>
-                </div>
-            </div>
+                    <div class="ui grid">
+                        <div class="five wide column">
+                            <img class="ui circular image intro-image" src="img/pastor-dent.jpg" alt=""/>
+                        </div>
+                        <div class="eleven wide column">
+                            <blockquote>
+                                "a family-oriented church for all of the Lord's children regardless of race, color,
+                                creed, or
+                                circumstance."
+                            </blockquote>
+                            <p>I am very pleased that you decided to visit the website of First African Baptist Church
+                                of Sharon
+                                Hill, PA. First African is a family-oriented church for all of the Lord's children
+                                regardless of
+                                race,
+                                color, creed, or circumstance.
+                                If you have never experienced the JOY! of First African, I sincerely ask you to join us
+                                for
+                                Sunday morning worship service. If you have visited previously and are looking for a
+                                church
+                                home, please accept
+                                an invitation to become part of our Christian fellowship on Sunday morning.May God bless
+                                and
+                                keep you.</p>
+                        </div>
+                    </div>
         </section>
         <!--</div>-->
-        <div class="inverted-wrap content-wrap p-2"  data-stellar-background-ratio="0.5">
+        <div class="inverted-wrap content-wrap p-2" data-stellar-background-ratio="0.5">
             <h2>"The Courage to Lead, The Faith to Follow"</h2>
         </div>
         <section class="[ ui grid equal width mobile ] relaxed content-wrap">
@@ -161,7 +189,7 @@
                 <a href="" class="button button-is-hidden " data-reveal-id="ModalTwo">All Services Times</a>
             </div>
         </section>
-        <div class="inverted-wrap content-wrap p-1"  data-stellar-background-ratio="0.5">
+        <div class="inverted-wrap content-wrap p-1" data-stellar-background-ratio="0.5">
             <section class="ui mobile relaxed equal width grid">
                 <div class="column">
                     <h2>News & Events</h2>
@@ -190,8 +218,8 @@
                 </div>
             </section>
         </div>
-        <section class="content-wrap">
-            <div class="ui mobile centered column grid intro">
+        <section class="content-wrap centered-wrap">
+            <div class="ui mobile centered column grid">
                 <h1>"Word of Life" Bookstore</h1>
 
                 <div class="ten wide column center">
@@ -208,7 +236,7 @@
 
             <!-- Begin Books -->
             <div class="content-inner-wrap content-wrap">
-                <div class="ui four column grid">
+                <div class="ui four column grid card-wrap">
                     <div class="column">
                         <div class="ui fluid card">
                             <div class="image">
@@ -265,8 +293,8 @@
             </ul>-->
             <a href="" class="button button-is-hidden">Read More</a>
         </section>
-        <div class="inverted-wrap content-wrap p-2"  data-stellar-background-ratio="0.5">
-            <h2>"The Courage to Lead, The Faith to Follow"</h2>
+        <div class="inverted-wrap content-wrap p-2" data-stellar-background-ratio="0.5">
+
         </div>
         <div class="content-wrap">
             <section class="ui mobile relaxed equal width grid">
@@ -353,39 +381,76 @@
             </div>
         </div>
     </footer>
-</v c>
 
-<script src="js/slick.min.js"></script>
-<!--<script src="js/foundation.min.js"></script>
-<script>
-    $(document).foundation();
-</script>-->
-<script>
-    $(document).ready(function () {
-        $(".banner").slick({
-            dots: true,
-            autoplay: true,
-            autoplaySpeed: 4000,
-            speed: 2000,
-            arrows: false,
-            fade: true,
-            lazyLoad: "progressive",
-            mobileFirst: true,
-            pauseOnDotsHover: true
-        });
+    <div class="ui modal">
+        <i class="close icon"></i>
+
+        <div class="header">
+            Profile Picture
+        </div>
+        <div class="image content">
+            <div class="ui medium image">
+                <!--<img src="/images/avatar/large/chris.jpg">-->
+            </div>
+            <div class="description">
+                <div class="ui header">We've auto-chosen a profile image for you.</div>
+                <p>We've grabbed the following image from the
+                    <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your
+                    registered e-mail address.</p>
+
+                <p>Is it okay to use this photo?</p>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="ui black deny button">
+                Nope
+            </div>
+            <div class="ui positive right labeled icon button">
+                Yep, that's me
+                <i class="checkmark icon"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/slick.min.js"></script>
+    <script src="js/semantic.min.js"></script>
+    <!--<script src="js/dimmer.min.js"></script>-->
+    <script>
+        $('.ui.modal')
+                .modal()
+        ;
+    </script>
+
+    <!--<script src="js/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>-->
+    <script>
+        $(document).ready(function () {
+            $(".banner").slick({
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                speed: 1000,
+                arrows: false,
+                fade: true,
+                //lazyLoad: "progressive",
+                mobileFirst: true,
+                pauseOnDotsHover: false
+            });
 // On swipe event
-        $('.banner').on('swipe', function (event, slick, direction) {
-            console.log(direction);
+            $('.banner').on('swipe', function (event, slick, direction) {
+                console.log(direction);
 // left
+            });
         });
-    });
-</script>
+    </script>
 
-<script src="js/stickySidebar.js"></script>
-<script src="js/waypoints.min.js"></script>
-<script src="js/waypoints-sticky.min.js"></script>
-<script src="js/scroll.js"></script>
-<script src="js/jquery.animsition.min.js"></script>
+    <!--<script src="js/stickySidebar.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/waypoints-sticky.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/jquery.animsition.min.js"></script>-->
 
 </body>
 </html>
